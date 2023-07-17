@@ -1,0 +1,59 @@
+.logo{
+    height: 50px;
+    width: 50px;
+
+}
+
+.nav {
+    
+
+    color: #fff;
+    background: #59CE8F;
+    background-size: 300%;
+    
+
+    z-index: 1;
+   }
+   
+ .nav:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+   }
+
+   
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+.nav:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: #59CE8F;
+    background-size: 400%;
+    
+    transition: 1s;
+   }
+   
+.nav:hover::before {
+    filter: blur(2px);
+   }
+   
+.nav:active {
+    background: white;
+   }
+
+
+
+ 

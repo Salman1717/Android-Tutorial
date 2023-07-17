@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Oxygen:wght@300;400;700&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: box-border;
+  margin: 0;
+  padding: 10;
+}
+
+body {
+  font-family: Oxygen, sans-serif;
+  margin: 0;
+}
+
+.wrapper {
+  padding-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 16rem));
+  gap: 2rem;
+  justify-content: center;
+}
+
+.kot {
+  overflow: hidden;
+  box-shadow: 0 2px 20px #e0e0e0;
+  border-radius: 0.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+}
+.kot__image {
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+.kot__title {
+  padding: 1rem;
+}
+.kot__description {
+  padding: 0 1rem;
+}
+.kot_btn {
+  padding: 1rem;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 1rem;
+  margin: 1rem;
+  border: 2px solid #a9c52f;
+  background: transparent;
+  color: #a9c52f;
+  border-radius: 0.2rem;
+  transition: background 200ms ease-in, color 200ms ease-in;
+}
+.kot:hover {
+  transform: scale(1.02);
+  color: #e0e0e0;
+}
+.kot__btn:hover  {
+  background: white;
+  color: white;
+}
+
+
+.link_btn {
+  padding: 0.1rem;
+  font-family: Oxygen, sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  background: transparent;
+  color: #020200;
+  transition: background 200ms ease-in, color 200ms ease-in;
+  
+}
+
+.link_btn:hover{
+color: #e0e0e0;
+
+}
+
+.kot__btn:hover.txt{
+  color: #e0e0e0;
+}
+
+.txt:hover{
+  color: #e0e0e0;
+}
+
